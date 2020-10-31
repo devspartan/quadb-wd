@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HiHome } from "react-icons/hi";
+import { BiSearch, BiSearchAlt2, HiHome } from "react-icons/all";
 import "./Navbar.css";
 
 export class Navbar extends Component {
@@ -50,21 +50,26 @@ export class Navbar extends Component {
   render() {
     return (
       <div className="navbar-main-container">
-        <div className="links-container">
-          <div>
-            <HiHome className="home-icon" />
+        <div className="navbar-content">
+          <div className="navbar-links-container">
+            <div>
+              <HiHome className="home-icon" />
+            </div>
+            {this.navLinks.map((item) => {
+              return (
+                <a
+                  href={item.url}
+                  onClick={() => this.setState({ activeCount: item.id })}
+                  id={this.state.activeCount == item.id ? "active-link" : null}
+                >
+                  {item.text}
+                </a>
+              );
+            })}
           </div>
-          {this.navLinks.map((item) => {
-            return (
-              <a
-                href={item.url}
-                onClick={() => this.setState({ activeCount: item.id })}
-                id={this.state.activeCount == item.id ? 'active-link': null}
-              >
-                {item.text}
-              </a>
-            );
-          })}
+          <div className='home-icon'>
+            <BiSearchAlt2 fontSize={22} />
+          </div>
         </div>
       </div>
     );
