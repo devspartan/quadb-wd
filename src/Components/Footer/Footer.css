@@ -1,0 +1,123 @@
+.footer-main-container {
+  background: #111 url(https://static.toiimg.com/photo/57270035.cms) repeat;
+  padding: 5px 0;
+  border-top: 3px solid #be2819;
+  position: relative;
+  height: fit-content;
+}
+
+.footer-wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.footer-wrapper > div {
+  width: 50%;
+}
+
+/* Footer card */
+
+.footer-card-main-div {
+  padding: 10px 5px 15px;
+  height: fit-content;
+  padding-left: 15px;
+}
+
+.footer-card-heading {
+  display: flex;
+}
+
+.footer-card-heading div {
+  width: 80%;
+  margin: auto 0;
+  height: 1px;
+  background-color: #333;
+}
+
+.footer-card-heading h2 {
+  font-size: 12px;
+  line-height: 1;
+  min-width: fit-content;
+  margin: auto 5px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-links-wrapper {
+  display: grid;
+  width: 90%;
+  margin-left: 0;
+  margin-top: 15px;
+  padding-left: 10px;
+  grid-template-columns: 33% 33% 32%;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-links-wrapper a {
+  color: #ffffff;
+  padding-top: 3px;
+  font-size: 12px;
+  line-height: 1.4;
+  display: block;
+  transition: all 0.5s;
+  font-weight: 200;
+  -webkit-transition: all 0.5s;
+}
+
+.footer-links-wrapper a:hover {
+  color: rgb(116,116, 116);
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+  }
+  .footer-wrapper > div {
+    width: 100%;
+  }
+
+  .footer-links-wrapper a {
+    margin: 0px 5px 10px;
+    padding: 2px 15px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    width: fit-content;
+  }
+}
+
+.footer-copyright {
+  max-width: 1295px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-right: 4px;
+  color: #ccc;
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: #666;
+  text-decoration: none;
+}
