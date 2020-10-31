@@ -76,12 +76,12 @@
 .most-popular-see-all div {
   height: 1px;
   margin: auto;
-  width: 30%;
+  width: 90%;
   background-color: #000;
 }
 .most-popular-see-all a {
   min-width: fit-content;
-  margin: auto 4px;
+  margin: auto 5px;
   text-transform: uppercase;
   font-size: 12px;
 }

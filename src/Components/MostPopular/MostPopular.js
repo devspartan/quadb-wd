@@ -54,7 +54,7 @@ function MostPopular() {
       </div>
 
       <div className="most-popular-see-all">
-        <div></div>
+        <div style={{width: "250px"}}></div>
         <a>see all most shared stories</a>
         <div></div>
       </div>

@@ -85,3 +85,18 @@
   font-weight: 100;
   word-spacing: 2.5px;
 }
+
+@media screen and (max-width: 1000px) {
+  .content-news-container {
+    flex-direction: column-reverse;
+  }
+
+  .content-title, .content-left-div, .content-right-div {
+    max-width: 650px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  
+}
