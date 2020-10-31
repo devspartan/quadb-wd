@@ -5,6 +5,8 @@ import Title from "./Title";
 import MostPopular from "../MostPopular/MostPopular";
 import MiniNews from "../MiniNews/MiniNews";
 import { EntertainmentNews, BusinessNews, TVNews, SportsNews } from "./MiniNewsData";
+import {MainHeadlines} from './MainHeadlinesData'
+
 export class Content extends Component {
   render() {
     return (
@@ -13,10 +15,13 @@ export class Content extends Component {
         <Title />
         <div className="content-news-container">
           <div className="content-left-div">
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
+            {
+              MainHeadlines.map(item => {
+                return (
+                  <NewsCard data={item}/> 
+                )
+              })
+            }
           </div>
 
           <div className="content-right-div">
