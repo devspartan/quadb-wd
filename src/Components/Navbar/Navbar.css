@@ -12,7 +12,7 @@
 
 .topnav-left,
 .topnav-right {
-  width: 40%;
+  width: 30%;
   height: 100%;
   min-width: 470px;
   padding: 0 0 0 10px;
@@ -22,7 +22,7 @@
   display: flex;
 }
 
-.topnav-left a {
+.topnav-left-a {
   margin: auto 0;
   color: whitesmoke;
   border-right: 1px solid whitesmoke;
@@ -30,6 +30,7 @@
 }
 
 .topnav-right {
+  width: 55%;
   align-content: center;
   justify-content: flex-end;
 }
@@ -41,6 +42,7 @@
 .topnav-right > div:first-child {
   height: 24px !important;
   display: flex;
+  min-width: 250px;
   justify-content: center;
   justify-items: center;
   background: linear-gradient(90deg, #3023ae, #c86dd7) !important;
@@ -72,6 +74,48 @@
   cursor: pointer;
 }
 
+.lang-drop-down {
+  padding-top: 5.5px;
+  display: block;
+}
+
+.topnav-languages-div {
+  display: none;
+  background: #fff;
+  position: absolute;
+  left: 116px;
+  top: 22px;
+  padding: 5px 4px 0 4px;
+  min-width: 80px;
+  z-index: 14;
+  border: 1px solid #bbb;
+}
+
+.topnav-languages-div a {
+  display: block;
+  color: #000;
+  border-bottom: 1px solid #bbb;
+  padding: 3px 4px;
+}
+
+.topnav-languages-div a:hover {
+  background-color: rgba(210, 213, 248, 0.767);
+}
+
+.lang-drop-down:hover .topnav-languages-div {
+  display: block;
+}
+
+.drop-down-icon {
+  margin-top: -4px;
+  font-size: 22px;
+  transition: all 0.1s;
+}
+
+.drop-down-active {
+  transform: rotate(180deg);
+}
+
 /* Banner */
 
 .banner-main-container {
@@ -92,7 +136,9 @@
 
 .navbar-main-container {
   background: #be2819;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 12;
 }
 
 .navbar-content {
@@ -137,6 +183,8 @@
   color: #fff;
   font-size: 16px;
   margin: auto 5px;
+  z-index: 10;
+  transition: opacity 0.5s;
 }
 
 .navbar-links-container > div:first-child:hover {
@@ -148,10 +196,16 @@
 
 .search-main-comp {
   background: rgb(42, 42, 42, 0.9);
-  position: relative;
+  position: absolute;
+  height: 0px;
+  width: 100%;
   z-index: 101;
   display: flex;
-  padding: 10px 0;
+  transition: all 0.5s;
+}
+
+.search-main-comp > div {
+  transition: all 0.5s;
 }
 
 .search-main-comp > div:first-child {
