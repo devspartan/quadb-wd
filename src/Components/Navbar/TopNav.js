@@ -15,7 +15,7 @@ function TopNav() {
       <div className="topnav-left">
         <a>English</a>
         <a>Epaper</a>
-        <a style={{borderRight: "none"}}>GadgetsNow</a>
+        <a style={{ borderRight: "none" }}>GadgetsNow</a>
       </div>
       <div className="topnav-right">
         <div>
@@ -24,7 +24,7 @@ function TopNav() {
         </div>
         <div>sign in</div>
 
-        <div className="topnav-right-icons" style={{margin: "auto 0"}}>
+        <div className="topnav-right-icons" style={{ margin: "auto 0" }}>
           <BiBell />
           <FaTwitter />
           <FaFacebookF />

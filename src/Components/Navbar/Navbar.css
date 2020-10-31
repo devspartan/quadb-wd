@@ -92,7 +92,9 @@
 
 .navbar-main-container {
   background: #be2819;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 12;
 }
 
 .navbar-content {
@@ -137,6 +139,8 @@
   color: #fff;
   font-size: 16px;
   margin: auto 5px;
+  z-index: 10;
+  transition: opacity 0.5s;
 }
 
 .navbar-links-container > div:first-child:hover {
@@ -148,10 +152,16 @@
 
 .search-main-comp {
   background: rgb(42, 42, 42, 0.9);
-  position: relative;
+  position: absolute;
+  height: 0px;
+  width: 100%;
   z-index: 101;
   display: flex;
-  padding: 10px 0;
+  transition: all 0.5s;
+}
+
+.search-main-comp > div {
+  transition: all 0.5s;
 }
 
 .search-main-comp > div:first-child {
