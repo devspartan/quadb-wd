@@ -29,17 +29,17 @@
 
 .content-news-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .content-left-div {
   width: 90%;
-  /* background-color: rgb(216, 18, 84); */
-  max-width: 700px;
+  max-width: 645px;
 }
 
 .content-right-div {
   width: 90%;
-  max-width: 300px;
+  max-width: 330px;
 }
 
 /* News Component */

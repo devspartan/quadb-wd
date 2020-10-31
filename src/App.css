@@ -2,6 +2,11 @@
   background-color: aqua;
   text-align: center;
 }
+
+:root {
+  --mainTransition: all .5s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +17,12 @@ body {
   font-size: 13px;
 }
 
+/* span, p {
+  word-spacing: 1.4px;
+} */
+
 a{
   text-decoration: none;
-  color: whitesmoke;
 }
 
 a:hover {

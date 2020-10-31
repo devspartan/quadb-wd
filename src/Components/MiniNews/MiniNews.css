@@ -1,0 +1,27 @@
+.mini-news-main-container > div:last-child {
+    border-bottom: none;
+}
+
+
+/* Mini news card */
+
+.mini-news-card {
+  padding: 15px 5px 10px 0;
+  display: flex;
+  border-bottom: 1px solid #eceaea;
+}
+
+.mini-news-card img {
+  width: 94px;
+  height: 70px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.mini-news-card a {
+  color: #454545;
+  font: normal 14px/20px proxima-regular1, arial, sans-serif;
+  margin-bottom: 5px;
+  display: block;
+}
+
