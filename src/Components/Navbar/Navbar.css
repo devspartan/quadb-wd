@@ -1,0 +1,79 @@
+.topnav-main-container {
+    background: #1a1a1a;
+    height: 30px;
+    border-bottom: 2px solid #333;
+    position: relative;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.topnav-left, .topnav-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: 100%;
+    min-width: 470px;
+    padding: 0 0 0 10px;
+    margin: 0 2px;
+    color: whitesmoke;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.topnav-left {
+}
+
+.topnav-left span {
+    margin: auto 0;
+    font-size: 13px;
+    color: whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0px 8px;
+}
+
+
+
+.topnav-right {
+    align-content: center;
+ justify-content: flex-end;
+}
+
+.topnav-right > div {
+    margin: auto 0;
+}
+
+.topnav-right > div:first-child {
+    height: 24px !important;
+    font-size: 13px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: linear-gradient(90deg,#3023ae,#c86dd7) !important;
+    border-radius: 2px !important;
+    border: 0 !important;
+    padding: 2px 8px;
+}
+
+.topnav-right > div:first-child * {
+    margin: auto 2px;
+}
+
+.topnav-right > div:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: whitesmoke;
+    margin: auto 1.5rem;
+}
+
+.topnav-right-icons * {
+    margin: 0 2px;
+    padding: 2px;
+    font-size: 16px;
+    color: rgb(112, 111, 114);
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
