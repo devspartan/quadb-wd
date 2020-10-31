@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Navbar from "./Components/Navbar/Navbar";
 function App() {
   return (
-    <div style={{ minWidth: "1000px" }}>
+    <div className='App'>
       <Navhandle />
       <Navbar />
       <Content />

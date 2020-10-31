@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import { BiSearch, BiSearchAlt2, HiHome } from "react-icons/all";
+import DropdownNews from "./DropdownNews";
 import "./Navbar.css";
 import SearchComp from "./SearchComp";
 
@@ -82,12 +83,14 @@ export class Navbar extends Component {
       <div className="navbar-main-container" ref={this.searchRef}>
         <div className="navbar-content">
           <div className="navbar-links-container">
-            <div>
+            <div className="home-drop-down-comp">
               <HiHome className="home-icon" />
+              <DropdownNews />
             </div>
             {this.navLinks.map((item) => {
               return (
                 <a
+                className='navbar-links-a'
                   href={item.url}
                   onClick={() => this.setState({ activeCount: item.id })}
                   id={this.state.activeCount == item.id ? "active-link" : null}
