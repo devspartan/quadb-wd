@@ -25,7 +25,7 @@ function TopNav() {
           >
             <a
               className="topnav-left-a"
-              style={{ display: "flex", paddingTop: "2px" }}
+              style={{ display: "flex", paddingTop: "0px", paddingBottom: "0px" }}
             >
               English{" "}
               <MdArrowDropDown

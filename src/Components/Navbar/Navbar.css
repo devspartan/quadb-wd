@@ -21,7 +21,7 @@
   width: fit-content;
   height: 100%;
   padding: 0 0 0 10px;
-  margin: 0 2px;
+  margin: auto 2px;
   font-size: 13px;
   color: whitesmoke;
   display: flex;
@@ -31,7 +31,7 @@
   margin: auto 0;
   color: whitesmoke;
   border-right: 1px solid whitesmoke;
-  padding: 0px 8px;
+  padding: 2px 8px;
 }
 
 .topnav-right {
