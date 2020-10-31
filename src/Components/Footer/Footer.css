@@ -1,6 +1,6 @@
 .footer-main-container {
   background: #111 url(https://static.toiimg.com/photo/57270035.cms) repeat;
-  padding: 20px 0;
+  padding: 5px 0;
   border-top: 3px solid #be2819;
   position: relative;
   height: fit-content;
@@ -60,14 +60,18 @@
 }
 
 .footer-links-wrapper a {
-  color: #fff;
+  color: #ffffff;
   padding-top: 3px;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.4;
   display: block;
   transition: all 0.5s;
   font-weight: 200;
   -webkit-transition: all 0.5s;
+}
+
+.footer-links-wrapper a:hover {
+  color: rgb(116,116, 116);
 }
 
 @media screen and (max-width: 1000px) {
@@ -86,10 +90,34 @@
   }
 
   .footer-links-wrapper a {
-    margin: 0px 5px 10px ;
+    margin: 0px 5px 10px;
     padding: 2px 15px;
     border: 1px solid #333;
     border-radius: 15px;
     width: fit-content;
   }
+}
+
+.footer-copyright {
+  max-width: 1295px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-right: 4px;
+  color: #ccc;
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: #666;
+  text-decoration: none;
 }
