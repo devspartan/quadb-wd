@@ -61,8 +61,8 @@
 
 .topnav-right-icons * {
   margin: auto 2px;
-  padding: 2px;
-  font-size: 20px;
+  padding: 3px;
+  font-size: 22px;
   color: rgb(112, 111, 114);
   border-radius: 50%;
   background-color: whitesmoke;
@@ -73,70 +73,69 @@
   cursor: pointer;
 }
 
-
 .banner-main-container {
-    width: 100%;
-    height: 90px;
-    padding: 10px 0;
-    display: flex;
-    background-color: #000;
+  width: 100%;
+  height: 90px;
+  padding: 10px 0;
+  display: flex;
+  background-color: #000;
 }
 
 .banner-main-container img {
-    width: 500px;
-    height: 40px; 
-    margin: 0 auto;
+  width: 500px;
+  height: 40px;
+  margin: 0 auto;
 }
-
 
 /* Navbar */
 
 .navbar-main-container {
-    background: #be2819;
-    position: relative;
+  background: #be2819;
+  position: relative;
 }
 
 .links-container {
-    margin: 0 auto;
-    max-width: 1000px;
-    display: flex;
-    height: 28px;
-    padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  height: 28px;
+  padding: 0;
 }
 
 .links-container a {
-    font-family: roboto,'Roboto',calibri,'arial narrow',sans-serif;
-    font-size: 12px;
-    padding: 1px 5px;
-    line-height: 26px;
-    color: #fff;
-    font-weight: 700;
-    text-transform: capitalize;
-    display: inline-block;
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-    transition: all .5s;
-    -webkit-transition: all .5s;
+  font-family: roboto, "Roboto", calibri, "arial narrow", sans-serif;
+  font-size: 12px;
+  padding: 1px 5px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
-.links-container a:hover {
-    color: #000;
-    font-weight: 600;
-    background-color: #fff;
+.links-container a:hover,
+#active-link {
+  color: #000;
+  font-weight: 600;
+  background-color: #fff;
 }
 
 .links-container > div:first-child {
-    display: flex;
+  display: flex;
 }
 
 .home-icon {
-    color: #fff;
-    font-size: 16px;
-    margin: auto 5px;
+  color: #fff;
+  font-size: 16px;
+  margin: auto 5px;
 }
 
 .links-container > div:first-child:hover {
-    background-color:rgba(255, 166, 0, 0.5);
-    color: #be2819;
+  background-color: rgba(255, 166, 0, 0.5);
+  color: #be2819;
 }

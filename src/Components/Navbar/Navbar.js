@@ -3,22 +3,48 @@ import { HiHome } from "react-icons/hi";
 import "./Navbar.css";
 
 export class Navbar extends Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             hover: false
-        }
-    }
-    
-  links = [
-    "latest news",
-    "most shared",
-    "most read",
-    "most commented",
-    "delhi elections",
-    "bihar elections",
+    this.state = {
+      hover: false,
+      active: false,
+      activeCount: 1,
+    };
+  }
+
+  navLinks = [
+    {
+      id: 1,
+      url: "#",
+      text: "latest news",
+    },
+    {
+      id: 2,
+      url: "#",
+      text: "most shared",
+    },
+
+    {
+      id: 3,
+      url: "#",
+      text: "most read",
+    },
+    {
+      id: 4,
+      url: "#",
+      text: "most commented",
+    },
+    {
+      id: 5,
+      url: "#",
+      text: "delhi elections",
+    },
+    {
+      id: 6,
+      url: "#",
+      text: "bihar elections",
+    },
   ];
 
   render() {
@@ -28,8 +54,16 @@ export class Navbar extends Component {
           <div>
             <HiHome className="home-icon" />
           </div>
-          {this.links.map((item) => {
-            return <a href="#">{item}</a>;
+          {this.navLinks.map((item) => {
+            return (
+              <a
+                href={item.url}
+                onClick={() => this.setState({ activeCount: item.id })}
+                id={this.state.activeCount == item.id ? 'active-link': null}
+              >
+                {item.text}
+              </a>
+            );
           })}
         </div>
       </div>

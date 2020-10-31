@@ -3,9 +3,7 @@ import "./Navbar.css";
 import {
   FaYoutube,
   BiWifi,
-  FaFacebook,
   FaTwitter,
-  BiNotification,
   BiBell,
   FaCrown,
   FaFacebookF,

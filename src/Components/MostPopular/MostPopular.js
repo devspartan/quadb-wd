@@ -1,47 +1,65 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import MiniDesc from "./MiniDesc";
 import MiniHead from "./MiniHead";
+import { MostPopularNewsData } from "./MostPopularNewsData";
 
-export class MostPopular extends Component {
-  render() {
-    return (
-      <div className="most-popular-main-div">
-        <MiniHead
-          heading={"MOST POPULAR"}
-          headStyle={{ borderBottom: "none" }}
-        />
+function MostPopular() {
+  const [activeCount, setActiveCount] = useState(1);
 
-        <div className="most-popular-button">
-          <a>shared</a>
-          <a>commented</a>
-          <a>read</a>
-          <a style={{ borderRight: "none" }}>tranding</a>
-        </div>
-        <MiniDesc
-          description={
-            " Bigg Boss 14: Salman Khan slams Rahul Vaidya for his nepotism remark; asks 'agar mere father mere liye kuch karte hain toh kya woh nepotism hoga'"
-          }
-        />
-        <MiniDesc
-          description={
-            " Bigg Boss 14: Salman Khan slams Rahul Vaidya for his nepotism remark; asks 'agar mere father mere liye kuch karte hain toh kya woh nepotism hoga'"
-          }
-        />
-        <MiniDesc
-          description={
-            " Bigg Boss 14: Salman Khan slams Rahul Vaidya for his nepotism remark; asks 'agar mere father mere liye kuch karte hain toh kya woh nepotism hoga'"
-          }
-          MiniDescStyle={{ borderBottom: "none" }}
-        />
+  const filterNews = [
+    {
+      id: 1,
+      url: "#",
+      text: "shared",
+    },
+    {
+      id: 2,
+      url: "#",
+      text: "commented",
+    },
+    {
+      id: 3,
+      url: "#",
+      text: "read",
+    },
+    {
+      id: 4,
+      url: "#",
+      text: "trending",
+    },
+  ];
 
-        <div className="most-popular-see-all">
-          <div></div>
-          <a>see all most shared stories</a>
-          <div></div>
-        </div>
+  return (
+    <div className="most-popular-main-div">
+      <MiniHead heading={"MOST POPULAR"} headStyle={{ borderBottom: "none" }} />
+
+      <div className="most-popular-button">
+        {filterNews.map((item) => {
+          return (
+            <a
+              href={item.url}
+              onClick={() => setActiveCount(item.id)}
+              id={activeCount == item.id ? "most-popular-button-active" : null}
+            >
+              {item.text}
+            </a>
+          );
+        })}
       </div>
-    );
-  }
+
+      <div className='most-popular-news-cont'>
+      {MostPopularNewsData[activeCount-1].map((item) => {
+        return <MiniDesc description={item.text} />;
+      })}
+      </div>
+
+      <div className="most-popular-see-all">
+        <div></div>
+        <a>see all most shared stories</a>
+        <div></div>
+      </div>
+    </div>
+  );
 }
 
 export default MostPopular;

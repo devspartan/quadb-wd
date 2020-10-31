@@ -1,8 +1,8 @@
 /* Mini heading */
 
 .minihead-div {
-    border-bottom: 3px solid #333;
-    padding-bottom: 4px;
+  border-bottom: 3px solid #333;
+  padding-bottom: 4px;
 }
 
 .minihead-div > div {
@@ -16,63 +16,72 @@
 
 /* Most popular button */
 .most-popular-main-div {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .most-popular-button {
-    width: 100%;
-    display: flex;
-    border-bottom: 3px solid #303030;
-    background: #bababa;
-    margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  border-bottom: 3px solid #303030;
+  background: #bababa;
+  margin-bottom: 8px;
 }
 
 .most-popular-button a {
-    display: inline-block;
-    line-height: 32px;
-    text-transform: uppercase;
-    padding: 0 10px;
-    font-size: 11px;
-    border-right: 1px solid white;
-    color: #fff;
-    font-weight: 500;
-    transition: var(--mainTransition);
+  display: inline-block;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 11px;
+  border-right: 1px solid white;
+  color: #fff;
+  font-weight: 500;
+  transition: var(--mainTransition);
 }
-.most-popular-button a:hover {
-    background-color: #000;
+.most-popular-button a:hover,
+#most-popular-button-active {
+  background-color: #000;
+}
+
+.most-popular-button > a:last-child {
+  border-right: none;
+}
+
+.most-popular-news-cont > div:last-child {
+    border-bottom: none;
 }
 
 /* Mini Description */
 
 .mini-desc {
-    border-bottom: 1px solid #eceaea;
-    padding: 0 5px 8px 0;
-    position: relative;
-    margin-bottom: 10px;
+  border-bottom: 1px solid #eceaea;
+  padding: 0 5px 8px 0;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .mini-desc a {
-    font-size: 14px;
-    font-weight: 200;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 /* see all */
 
 .most-popular-see-all {
-    margin-top: -4px;
-    display: flex;
-    justify-items: center;
+  margin-top: -4px;
+  display: flex;
+  justify-items: center;
 }
 
 .most-popular-see-all div {
-    height: 1px;
-    margin: auto;
-    width: 30%;
-    background-color: #000;
+  height: 1px;
+  margin: auto;
+  width: 30%;
+  background-color: #000;
 }
 .most-popular-see-all a {
-    min-width: fit-content;
-    margin: auto 4px;
-    text-transform: uppercase;
-    font-size: 12px;
+  min-width: fit-content;
+  margin: auto 4px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
