@@ -8,15 +8,16 @@ import {
   BiNotification,
   BiBell,
   FaCrown,
+  FaFacebookF,
 } from "react-icons/all";
 
 function TopNav() {
   return (
     <div className="topnav-main-container">
       <div className="topnav-left">
-        <span>English</span>
-        <span>Epaper</span>
-        <span>GadgetsNow</span>
+        <a>English</a>
+        <a>Epaper</a>
+        <a style={{borderRight: "none"}}>GadgetsNow</a>
       </div>
       <div className="topnav-right">
         <div>
@@ -25,10 +26,10 @@ function TopNav() {
         </div>
         <div>sign in</div>
 
-        <div className="topnav-right-icons">
+        <div className="topnav-right-icons" style={{margin: "auto 0"}}>
           <BiBell />
           <FaTwitter />
-          <FaFacebook />
+          <FaFacebookF />
           <BiWifi />
           <FaYoutube />
         </div>

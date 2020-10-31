@@ -1,7 +1,22 @@
-.App {
+.app {
+  background-color: aqua;
   text-align: center;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.body {
-  min-width: 1000px;
+body {
+  font-size: 13px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  cursor: pointer;
 }
