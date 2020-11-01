@@ -5,8 +5,8 @@ import './MiniNews.css'
 function MiniNewsCard(props) {
     return (
         <div className='mini-news-card' style={props.MiniNewsCardStyle}>
-            <a><img src={props.img}></img></a>
-            <a>{props.headline}</a>
+            <a href='/#'><img src={props.img} alt={props.headline}></img></a>
+            <a href='/#'>{props.headline}</a>
         </div>
     )
 }

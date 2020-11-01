@@ -1,5 +1,5 @@
-import React, { Component, useState } from "react";
-import { BiSearch, BiSearchAlt2, HiHome } from "react-icons/all";
+import React, { Component } from "react";
+import { BiSearchAlt2, HiHome } from "react-icons/all";
 import DropdownNews from "./DropdownNews";
 import "./Navbar.css";
 import SearchComp from "./SearchComp";
@@ -24,7 +24,7 @@ export class Navbar extends Component {
   navLinks = [
     {
       id: 1,
-      url: "#",
+      url: "/#",
       text: "latest news",
     },
     {
@@ -74,7 +74,6 @@ export class Navbar extends Component {
   };
 
   componentDidMount() {
-    console.log(this.searchRef.current.getBoundingClientRect().y);
     window.addEventListener("scroll", this.handleScroll);
   }
 
@@ -90,10 +89,11 @@ export class Navbar extends Component {
             {this.navLinks.map((item) => {
               return (
                 <a
-                className='navbar-links-a'
+                  className="navbar-links-a"
+                  key={item.id}
                   href={item.url}
                   onClick={() => this.setState({ activeCount: item.id })}
-                  id={this.state.activeCount == item.id ? "active-link" : null}
+                  id={this.state.activeCount === item.id ? "active-link" : null}
                 >
                   {item.text}
                 </a>

@@ -7,11 +7,11 @@ function MiniNews(props) {
   
   return (
     <div className="mini-news-main-container">
-      <a>
+      <a href="/#">
         <MiniHead heading={heading} />
       </a>
       {dataArr.map((item) => {
-        return <MiniNewsCard img={item.img} headline={item.headline} />;
+        return <MiniNewsCard key={item.id} img={item.img} headline={item.headline} />;
       })}
     </div>
   );

@@ -17,6 +17,7 @@
 /* Most popular button */
 .most-popular-main-div {
   padding: 15px 0;
+  color: #303030;
 }
 
 .most-popular-button {
@@ -47,6 +48,9 @@
   border-right: none;
 }
 
+.most-popular-news-cont {
+  color: #333;
+}
 .most-popular-news-cont > div:last-child {
     border-bottom: none;
 }
@@ -63,6 +67,7 @@
 .mini-desc a {
   font-size: 14px;
   font-weight: 200;
+  color: #303030;
 }
 
 /* see all */
@@ -82,6 +87,7 @@
 .most-popular-see-all a {
   min-width: fit-content;
   margin: auto 5px;
+  color: #303030;
   text-transform: uppercase;
   font-size: 12px;
 }

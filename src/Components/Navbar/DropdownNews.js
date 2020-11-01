@@ -5,13 +5,16 @@ import { DropDownData } from "./DropDownNewsData";
 // ddn = drop-down-news
 function DropdownNews() {
   const [activeTag, setActiveTag] = useState(0);
-  console.log(DropDownData[activeTag]);
   return (
     <div className="ddn-container">
       <div className="ddn-left">
         {DropDownData.map((item) => {
           return (
-            <a href="#" onMouseEnter={() => setActiveTag(item.id)}>
+            <a
+              key={item.id}
+              href="/#"
+              onMouseEnter={() => setActiveTag(item.id)}
+            >
               {item.tag}
             </a>
           );
@@ -25,10 +28,14 @@ function DropdownNews() {
           }
           MiniNewsCardStyle={{ paddingTop: "0px" }}
         />
-        <ul className='ddn-right-desc'>
+        <ul className="ddn-right-desc">
           {DropDownData[activeTag]
-            ? DropDownData[activeTag].description.map((item) => {
-                return <li><a>{item}</a></li>;
+            ? DropDownData[activeTag].description.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href="#">{item}</a>
+                  </li>
+                );
               })
             : null}
         </ul>
