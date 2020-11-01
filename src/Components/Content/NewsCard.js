@@ -6,12 +6,12 @@ function NewsComp(props) {
 
   return (
     <div className="newscomp-main-container">
-      <a>
-        <img src={img}></img>
+      <a href="/#" >
+        <img src={img} alt={headline}></img>
       </a>
 
       <span style={{ display: "block" }}>
-        <a>{headline}</a>
+        <a href="/#" >{headline}</a>
       </span>
       <span id="desc">
         <p>{description}</p>

@@ -259,6 +259,10 @@
   margin-left: 0px;
 }
 
+.ddn-right-desc a {
+  color: #303030;
+}
+
 .ddn-right-desc li {
   list-style-position: inside;
   list-style-type: square;

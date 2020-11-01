@@ -12,7 +12,7 @@ function FooterLinkCard(props) {
       </div>
       <div className="footer-links-wrapper">
         {linksArr.map((item) => {
-          return <a>{item.text}</a>;
+          return <a key={item.id}>{item.text}</a>;
         })}
       </div>
     </div>

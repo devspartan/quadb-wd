@@ -38,6 +38,7 @@ function MostPopular() {
           return (
             <a
               href={item.url}
+              key={item.id}
               onClick={() => setActiveCount(item.id)}
               id={activeCount == item.id ? "most-popular-button-active" : null}
             >
@@ -47,15 +48,15 @@ function MostPopular() {
         })}
       </div>
 
-      <div className='most-popular-news-cont'>
-      {MostPopularNewsData[activeCount-1].map((item) => {
-        return <MiniDesc description={item.text} />;
-      })}
+      <div className="most-popular-news-cont">
+        {MostPopularNewsData[activeCount - 1].map((item, index) => {
+          return <MiniDesc key={index} description={item.text} />;
+        })}
       </div>
 
       <div className="most-popular-see-all">
-        <div style={{width: "250px"}}></div>
-        <a>see all most shared stories</a>
+        <div style={{ width: "250px" }}></div>
+        <a href="#">see all most shared stories</a>
         <div></div>
       </div>
     </div>
